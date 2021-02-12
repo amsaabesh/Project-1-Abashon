@@ -4,7 +4,7 @@ int main()
 {
     int i,j,k;
     char pasw[20],input_pass[20];
-    printf("\t\tWelcome TO Apartment Bill\nIf you want to continue press 1, else anything\n");
+    printf("\t\tWelcome TO Abashon\nThis Software is Designed by Ahmed Mahir Shoaib\nIf you want to continue press 1, else anything\n");
     scanf("%d",&k);//press 1 to enter in main code...
     FILE *bill_save,*bill_collect,*pass,*add_info;
     if(k==1){
@@ -125,9 +125,9 @@ int main()
         total=(gas*flat)+(moyla*flat)+(bua*flat)+(night_guard*flat)+(angina_porishkar*flat)+(rasta_jharu*flat)+(caretaker*flat)+elect+water+other;
         bill=(total/(flat/1.0));
         if(other)
-            fprintf(bill_save,"Welcome to %s\nHere is total %d flat(s)\nIn %s,%d\nGas bill = %d Taka only\nWater bill is = %.2lf Taka only\nElectric bill = %.2lf Taka only\nMoylar bill = %d Taka only\nBuar bill = %d Taka only\nNight guard's bill = %d Taka only\nRasta porishkarer bill = %d Taka only\nAngina porishkar = %d Taka only\nCaretaker's bill = %d Taka only\nOther charge = %.2lf Taka only\n ____________________________\ntotal bill = %.2lf Taka only\nThanks Every one\n\n\t_______________\n\tsignature and date\n\n\n",apar, flat, month, year, gas, (water/flat), (elect/flat), moyla, bua, night_guard,rasta_jharu, angina_porishkar, caretaker, (other/flat), bill);
+            fprintf(bill_save,"Welcome to %s\nHere is total %d flat(s)\nIn %s,%d\nGas bill = %d Taka only\nWater bill is = %.2lf Taka only\nElectric bill = %.2lf Taka only\nMoylar bill = %d Taka only\nBuar bill = %d Taka only\nNight guard's bill = %d Taka only\nRasta porishkarer bill = %d Taka only\nAngina porishkar = %d Taka only\nCaretaker's bill = %d Taka only\nOther charge = %.2lf Taka only\n ____________________________\ntotal bill = %.2lf Taka only\nThanks Every one\n\n\t\tShoaib The Developer of this code\n\t_______________\t_______________\n\tsignature and date\tDeveloper's Sign\n\n\n",apar, flat, month, year, gas, (water/flat), (elect/flat), moyla, bua, night_guard,rasta_jharu, angina_porishkar, caretaker, (other/flat), bill);
         else
-            fprintf(bill_save,"Welcome to %s\nHere is total %d flat(s)\nIn %s,%d\nGas bill = %d Taka only\nWater bill is = %.2lf Taka only\nElectric bill = %.2lf Taka only\nMoylar bill = %d Taka only\nBuar bill = %d Taka only\nNight guard's bill = %d Taka only\nRasta porishkarer bill = %d Taka only\nAngina porishkar = %d Taka only\nCaretaker's bill = %d Taka only\n ____________________________\ntotal bill = %.2lf Taka only\nThere are no extra charge in this month\nThanks Everyone\n\n\t_______________\n\tsignature and date\n\n\n",apar, flat, month, year, gas, (water/flat), (elect/flat), moyla, bua, night_guard,rasta_jharu, angina_porishkar, caretaker, bill);
+            fprintf(bill_save,"Welcome to %s\nHere is total %d flat(s)\nIn %s,%d\nGas bill = %d Taka only\nWater bill is = %.2lf Taka only\nElectric bill = %.2lf Taka only\nMoylar bill = %d Taka only\nBuar bill = %d Taka only\nNight guard's bill = %d Taka only\nRasta porishkarer bill = %d Taka only\nAngina porishkar = %d Taka only\nCaretaker's bill = %d Taka only\n ____________________________\ntotal bill = %.2lf Taka only\nThere are no extra charge in this month\nThanks Everyone\n\n\n\t\tShoaib The Developer of this code\t_______________\t_______________\n\tsignature and date\tDeveloper's Sign\n\n\n",apar, flat, month, year, gas, (water/flat), (elect/flat), moyla, bua, night_guard,rasta_jharu, angina_porishkar, caretaker, bill);
     }
     else if(i==2){                      //fixed bill change
         double other,water,elect,total,bill;
@@ -162,7 +162,7 @@ int main()
     else if(i==3){                  //password change
             char pasw_new[20];
             strcpy(pasw_new,pasw);
-            printf("Enter your password for change.\nDon't use any important password,\nbecause we don't use any step for security....\n");
+            printf("Enter your password for change.\nDon't use any important password,\nbecause we don't waste any time for security....\n");
             printf("At least use 6 characters.\n");
         gets(pasw);
          pass=fopen("password.txt","w+");
